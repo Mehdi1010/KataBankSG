@@ -31,7 +31,7 @@ public class AccountTest {
     }
 
     @Test
-    public void should_add_deposit_line_to_statement() throws ParseException {
+    public void depositTest() throws ParseException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
         Date depositDate = simpleDateFormat.parse("31-01-2022");
         Amount depositAmount = Amount.amountOf(1000);
@@ -44,7 +44,7 @@ public class AccountTest {
     }
 
     @Test
-    public void should_add_withdraw_line_to_statement() throws ParseException {
+    public void withDrawTest() throws ParseException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
         Date withdrawalDate = simpleDateFormat.parse("01-02-2022");
 
