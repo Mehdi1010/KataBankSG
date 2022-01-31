@@ -27,4 +27,20 @@ public class Account {
         balance = balanceAfterTransaction;
         statement.addLineContaining(operation, balanceAfterTransaction);
     }
+
+    public Statement getStatement() {
+        return statement;
+    }
+
+    public void setStatement(Statement statement) {
+        this.statement = statement;
+    }
+
+    public Amount getBalance() {
+        return balance;
+    }
+
+    public void setBalance(Amount balance) {
+        this.balance = balance;
+    }
 }

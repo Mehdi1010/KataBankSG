@@ -12,6 +12,10 @@ public class Operation {
         this.date = date;
     }
 
+    public Operation(){
+        super();
+    }
+
     public Amount balanceAfterOperation(Amount currentBalance) {
         return currentBalance.plus(value);
     }
